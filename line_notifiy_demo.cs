@@ -21,9 +21,9 @@ namespace TestLineNotify
 
 
             //Step 2 : 
-            //After your user authorize LINE will regirect to your redirect_uri from Step1
+            //After your user authorize LINE will redirect to your redirect_uri from Step1
             //in your redirect_uri , you will get querystring value named "code" 
-            //like thie : http://localhost:62670/risiv.aspx?code=aTONuztevWAOtgDzu8qzc9xxxx&state=checksum
+            //like this : http://localhost:62670/risiv.aspx?code=aTONuztevWAOtgDzu8qzc9xxxx&state=checksum
 
 
             //Step3 : 
