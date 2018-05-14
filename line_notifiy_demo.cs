@@ -1,3 +1,15 @@
+using System;
+using System.Collections.Specialized;
+using System.Net;
+using System.Text;
+
+
+namespace TestLineNotify
+{
+    public partial class index : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
             //Step0: regist LINT NOTIFIY from : https://notify-bot.line.me
 
 
@@ -14,7 +26,7 @@
             //Step 2 : 
             //After your user authorize LINE will regirect to your redirect_uri from Step1
             //in your redirect_uri , you will get querystring value named "code" 
-            //like thie : http://localhost:62670/risiv.aspx?code=aTONuztevWAOtgDzu8qzc9&state=checksum
+            //like thie : http://localhost:62670/risiv.aspx?code=aTONuztevWAOtgDzu8qzc9xxxx&state=checksum
 
 
             //Step3 : 
@@ -28,7 +40,7 @@
             wc.Headers[HttpRequestHeader.ContentType] = "application/x-www-form-urlencoded";
             NameValueCollection nc = new NameValueCollection();
             nc["grant_type"] = "authorization_code";
-            nc["code"] = "aTONudasdztevWAOtu8qzc9"; //the value from Step 2
+            nc["code"] = "aTONuztevWAOtgDzu8qzc9xxxx"; //the value from Step 2
             nc["redirect_uri"] = "http://localhost:62670/risiv.aspx"; // the url your fill in Step 1
             nc["client_id"] = "2pfCLBdsaddkILdcXea9UR7q"; // get from https://notify-bot.line.me
             nc["client_secret"] = "ML0uxbg6IGenrhpOFhhHVDze6OnP063Pju6aDkdcbgu"; //get from https://notify-bot.line.me
@@ -54,3 +66,6 @@
             byte[] bResult4 = wc.UploadValues(targetAddress4, nc4);
             string result4 = Encoding.UTF8.GetString(bResult4);
             Response.Write(result4);
+        }
+    }
+}
