@@ -10,17 +10,14 @@ namespace TestLineNotify
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Step0: regist LINE NOTIFIY from : https://notify-bot.line.me
+            //Step0: regist LINT NOTIFIY from : https://notify-bot.line.me
 
 
             //Step 1 : 
             //Tranfer user to your APP Notification to Allow something : 
-            //https://notify-bot.line.me/oauth/authorize?
-            //response_type =code
-            //&client_id=YOUR_CLIENT_ID
-            //&redirect_uri=YOUR_CALLBACK_URL
-            //&scope=notify
-            //&state=state
+            //YOUR_CLIENT_ID from Step 0
+            //YOUR_CALLBACK_URL : after user allow.
+            //https://notify-bot.line.me/oauth/authorize?response_type=code&client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_CALLBACK_URL&scope=notify&state=state
 
 
             //Step 2 : 
