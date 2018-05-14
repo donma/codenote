@@ -10,7 +10,7 @@ namespace TestLineNotify
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Step0: regist LINT NOTIFIY from : https://notify-bot.line.me
+            //Step0: regist LINE NOTIFIY from : https://notify-bot.line.me
 
 
             //Step 1 : 
