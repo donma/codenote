@@ -60,7 +60,7 @@ namespace TestLineNotify
             NameValueCollection nc4 = new NameValueCollection();
             nc4["message"] = "TEST SOME MESSAGE";
             
-            byte[] bResult4 = wc.UploadValues(targetAddress4, nc4);
+            byte[] bResult4 = wc4.UploadValues(targetAddress4, nc4);
             string result4 = Encoding.UTF8.GetString(bResult4);
             Response.Write(result4);
         }
